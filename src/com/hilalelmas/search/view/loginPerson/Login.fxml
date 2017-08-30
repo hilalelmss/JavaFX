@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="380.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hilalelmas.search.view.loginPerson.LoginController">
+    <children>
+        <Label layoutX="100.0" layoutY="102.0" text="Username:" textFill="#2109a8">
+            <font>
+                <Font name="Bookman Old Style Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="103.0" layoutY="182.0" text="Password:" textFill="#2109a8">
+            <font>
+                <Font name="Bookman Old Style Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfUserName" layoutX="200.0" layoutY="98.0" prefHeight="25.0" prefWidth="166.0" />
+        <Button layoutX="318.0" layoutY="281.0" mnemonicParsing="false" onAction="#login" prefHeight="33.0" prefWidth="97.0" text="Login" textAlignment="CENTER" textFill="#2109a8">
+            <font>
+                <Font name="Bookman Old Style Bold" size="14.0" />
+            </font>
+        </Button>
+      <PasswordField fx:id="tfPassword" layoutX="200.0" layoutY="178.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label fx:id="lblerror" layoutX="139.0" layoutY="237.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="17.0" prefWidth="240.0" textAlignment="CENTER" textFill="#d01710" underline="true" wrapText="true">
+        <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+        </font>
+      </Label>
+    </children>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+</AnchorPane>
