@@ -1,4 +1,4 @@
-package sample;
+package com.hilalelmas.search.view.sample;
 
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -14,21 +14,19 @@ import javafx.stage.Stage;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-
 public class Main extends Application {
-
     @Override
     public void start(Stage primaryStage) throws Exception {
         Image image = new Image(new FileInputStream(
-                "D:\\project\\apps\\javafx\\Kaynak Arama\\image.png"));
+                "D:\\project\\apps\\javafx\\search\\src\\com\\hilalelmas\\search\\view\\sample\\image.png"));
         ImageView iv = new ImageView(image);
         iv.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                 // iv.setImage(null);
                 try {
-                newStage();
                     primaryStage.close();
+                    newStage();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -57,3 +55,4 @@ public class Main extends Application {
         launch(args);
     }
 }
+

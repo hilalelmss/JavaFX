@@ -10,7 +10,7 @@ public class MainPerson extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Person.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("person.fxml"));
         primaryStage.setTitle("Add Person");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="330.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hilalelmas.search.view.sample.SampleController">
     <children>
-        <Button layoutX="52.0" layoutY="89.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="92.0" text="Login" textFill="#7b0cb2">
+        <Button fx:id="btnLogin" layoutX="52.0" layoutY="89.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="92.0" text="Login" textFill="#7b0cb2">
             <font>
                 <Font name="Bookman Old Style Bold" size="14.0" />
             </font>
@@ -17,7 +17,7 @@
                 <Font name="Bookman Old Style Bold" size="14.0" />
             </font>
         </Label>
-        <Button layoutX="236.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Sign Up" textFill="#7b0cb2">
+        <Button fx:id="btnSignup" layoutX="236.0" layoutY="214.0" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="92.0" text="Sign Up" textFill="#7b0cb2">
             <font>
                 <Font name="Bookman Old Style Bold" size="14.0" />
             </font>
