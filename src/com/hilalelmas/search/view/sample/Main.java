@@ -45,7 +45,7 @@ public class Main extends Application {
     public void newStage() throws IOException {
         Stage primaryStage=new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Cultural resources");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

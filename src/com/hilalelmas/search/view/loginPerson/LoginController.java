@@ -17,15 +17,14 @@ public class LoginController {
     public Label lblerror;
 
     public void login(ActionEvent actionEvent) throws IOException {
-       if(tfUserName.getText().equals("admin") && tfPassword.getText().equals("1234"))
-       {
-           Parent root = FXMLLoader.load(getClass().getResource("resource.fxml"));
-           Stage stage=new Stage();
-           stage.setTitle("Resources");
-           stage.setScene(new Scene(root));
-           stage.show();
-       }
-       else
-           lblerror.setText("Username or password is false !!");
+
+        if (tfUserName.getText().equals("admin") && tfPassword.getText().equals("1234")) {
+            Parent root = FXMLLoader.load(getClass().getResource("../resources/resource.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Resources");
+            stage.setScene(new Scene(root));
+            stage.show();
+        } else
+            lblerror.setText("Username or password is false !!");
     }
 }

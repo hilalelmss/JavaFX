@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -12,24 +13,24 @@ import java.io.IOException;
 public class SampleController {
 
 
+    public Label lblsample;
     public Button btnLogin;
-    public Button btnSignup;
+    public  Button btnSignup;
 
     public void login(ActionEvent actionEvent) throws IOException {
-        System.out.println("but");
         Parent root = null;
-        root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        root = FXMLLoader.load(getClass().getResource("../loginPerson/Login.fxml"));
         Stage stage = new Stage();
-        //stage.setTitle("Login");
+        stage.setTitle("Login");
         stage.setScene(new Scene(root));
         stage.show();
     }
 
     public void signUp(ActionEvent actionEvent) throws IOException {
         Parent root = null;
-        root = FXMLLoader.load(getClass().getResource("person.fxml"));
+        root = FXMLLoader.load(getClass().getResource("../addPerson/person.fxml"));
         Stage stage = new Stage();
-        //  stage.setTitle("Resources");
+         stage.setTitle("Person");
         stage.setScene(new Scene(root));
         stage.show();
     }

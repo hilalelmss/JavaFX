@@ -5,19 +5,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hilalelmas.search.view.sample.SampleController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #D8BFD8;" fx:controller="com.hilalelmas.search.view.sample.SampleController">
     <children>
         <Button fx:id="btnLogin" layoutX="52.0" layoutY="89.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="92.0" text="Login" textFill="#7b0cb2">
             <font>
                 <Font name="Bookman Old Style Bold" size="14.0" />
             </font>
         </Button>
-        <Label fx:id="lblsample" layoutX="11.0" layoutY="165.0" prefHeight="33.0" prefWidth="356.0" text="If you are not a member,click to join immediately !!" textAlignment="CENTER" textFill="#7c0a67" wrapText="true">
+        <Label fx:id="lblsample" layoutX="145.0" layoutY="165.0" prefHeight="33.0" prefWidth="401.0" text="If you are not a member,click to join immediately !!" textAlignment="CENTER" textFill="#7c0a67" wrapText="true">
             <font>
                 <Font name="Bookman Old Style Bold" size="14.0" />
             </font>
         </Label>
-        <Button fx:id="btnSignup" layoutX="236.0" layoutY="214.0" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="92.0" text="Sign Up" textFill="#7b0cb2">
+        <Button fx:id="btnSignup" layoutX="410.0" layoutY="234.0" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="92.0" text="Sign Up" textFill="#7b0cb2">
             <font>
                 <Font name="Bookman Old Style Bold" size="14.0" />
             </font>
